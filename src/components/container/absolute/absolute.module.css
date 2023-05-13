@@ -1,0 +1,15 @@
+.topLeft {
+    @apply top-0 left-0;
+}
+
+.topRight {
+    @apply top-0 right-0;
+}
+
+.bottomLeft {
+    @apply bottom-0 left-0;
+}
+
+.bottomRight {
+    @apply bottom-0 right-0;
+}

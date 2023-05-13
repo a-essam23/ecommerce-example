@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@import "./typography.scss";
+@import "./themes.scss";
+@import "./swiper-override.scss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    &--primary {
+        @apply bg-primary text-secondary;
+    }
+    &--secondary {
+        @apply bg-secondary text-primary;
+    }
+    &--sm {
+        @apply mx-auto w-10/12 xl:w-9/12 2xl:w-8/12;
+    }
+    &--md {
+        @apply mx-auto w-11/12 xl:w-11/12 2xl:w-10/12;
+    }
+    &--lg {
+        @apply mx-auto w-11/12;
+    }
+    &--full {
+        @apply w-full;
+    }
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+@tailwind utilities;

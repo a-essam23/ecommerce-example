@@ -1,0 +1,15 @@
+.primary {
+    @apply bg-primary text-neutral hover:bg-primary-hover active:bg-primary-active;
+}
+.secondary {
+    @apply bg-secondary text-neutral hover:bg-secondary-hover active:bg-secondary-active;
+}
+.sm {
+    @apply text-normal px-1.5 py-1;
+}
+.md {
+    @apply text-h5 px-4 py-1;
+}
+.lg {
+    @apply text-h4 px-8 py-2;
+}

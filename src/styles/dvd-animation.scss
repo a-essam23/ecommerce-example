@@ -1,0 +1,28 @@
+@keyframes moveX {
+    from {
+        left: 0%;
+    }
+    to {
+        left: calc(100% - 107px);
+    }
+}
+
+@keyframes moveY {
+    from {
+        top: 0%;
+    }
+    to {
+        top: calc(100% - 40px);
+    }
+}
+
+.animate-dvd {
+    -webkit-animation: moveX 1s linear 0s infinite alternate,
+        moveY 5.7s linear 0s infinite alternate;
+    -moz-animation: moveX 1s linear 0s infinite alternate,
+        moveY 5.7s linear 0s infinite alternate;
+    -o-animation: moveX 1s linear 0s infinite alternate,
+        moveY 5.7s linear 0s infinite alternate;
+    animation: moveX 1s linear 0s infinite alternate,
+        moveY 5.7s linear 0s infinite alternate;
+}
