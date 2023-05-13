@@ -15,7 +15,7 @@ const Productpage: FC = () => {
     const { id } = useParams();
     const { addToCart, isAdded } = useCart();
     const { product } = usePlaceholder({ queries: [{ name: "product", id }] });
-    const inCart = isAdded(id);
+    const inCart = isAdded(id || "");
     const price = useMemo(() => {
         return Math.floor(Math.random() * 100) + 10;
     }, []);
@@ -77,7 +77,7 @@ const Productpage: FC = () => {
                                 className="w-max rounded-primary"
                                 onClick={() => {
                                     addToCart({
-                                        id,
+                                        id: id || "",
                                         name: `Product ${id}`,
                                         price,
                                         quantity,
