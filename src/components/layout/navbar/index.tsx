@@ -70,7 +70,7 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
                         </Link>
                         <button ref={loginRef} className="flex">
                             <FontAwesomeIcon icon={faUser} />
-                            <LoginModal Ref={loginRef} />
+                            {/* <LoginModal Ref={loginRef} /> */}
                         </button>
                     </div>
                 </nav>
